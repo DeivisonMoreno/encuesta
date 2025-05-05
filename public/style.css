@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #e6f4ea;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2e7d32;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  select, input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: #c8e6c9;
+    border-left: 5px solid #388e3c;
+  }
+  
+  .card-body {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;    
+    gap: 0.4rem;
+  }
+
+  /* Footer */
+.project-footer {
+  background: linear-gradient(170deg, #388e3cad, #d9dbe7);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Título */
+.footer-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Lista de participantes */
+.participants-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.participants-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.participants-list li:hover {
+  color: black;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Agregar un poco de sombra a cada nombre */
+.participants-list li::before {
+  content: "";
+  align-items: center;
+  width: 4px;
+  height: 30px;
+  background-color: black;
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.participants-list li:hover::before {
+  opacity: 1;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-title {
+    font-size: 24px;
+  }
+
+  .participants-list li {
+    font-size: 16px;
+  }
+}

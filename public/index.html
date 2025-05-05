@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calcula tu Huella Ecológica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🌿 Calcula tu Huella Ecológica</h1>
+    <form id="eco-form">
+
+      <div class="form-group">
+        <label for="transporte">🚇 ¿Cuántas veces usas transporte público por semana?</label>
+        <input type="range" id="transporte" name="transporte" min="0" max="14" value="3"
+          oninput="outputTransporte.value = transporte.value">
+        <output id="outputTransporte">3</output> veces
+      </div>
+
+      <div class="form-group">
+        <label>🍽️ ¿Con qué frecuencia comes carne?</label>
+        <label><input type="radio" name="carne" value="diario" required> A diario</label>
+        <label><input type="radio" name="carne" value="ocasional"> Ocasionalmente</label>
+        <label><input type="radio" name="carne" value="nunca"> Nunca</label>
+      </div>
+
+      <div class="form-group">
+        <label>♻️ ¿Reciclas regularmente?</label>
+        <select name="recicla" required>
+          <option value="">Selecciona una opción</option>
+          <option value="siempre">Siempre</option>
+          <option value="a_veces">A veces</option>
+          <option value="nunca">Nunca</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>🔌 ¿Apagas los electrodomésticos que no usas?</label>
+        <label><input type="radio" name="apaga" value="si">No</label>
+        <label><input type="radio" name="apaga" value="no">Si</label>
+      </div>
+
+      <div class="form-group">
+        <label>🚿 Tiempo promedio de tus duchas</label>
+        <select name="ducha" required>
+          <option value="larga">Más de 10 min</option>
+          <option value="media">5-10 min</option>
+          <option value="corta">Menos de 5 min</option>
+        </select>
+      </div>
+
+      <button type="submit">Calcular huella</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+
+  <footer class="project-footer">
+    <div class="footer-container">
+      <p class="footer-title">Participantes del Proyecto</p>
+      <ul class="participants-list">
+        <li>Juan Esteban Cárdenas Ortiz</li>
+        <li>Juan Andres Gordillo Tiria</li>
+        <li>Brayan Alexander Molina Velasco</li>
+        <li>Miguel Ángel León Gacha</li>
+        <li>Cristian Alejandro Lozada Murillo</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
